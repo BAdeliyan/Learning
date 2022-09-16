@@ -3,40 +3,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>قواعد نوشتاری Javascript</title>
-    <script>
-        // Comment یادداشت
-        var code=105;
-        code=120;
-        code=50+60;
-        code=code+100;
-        document.write(code+ '        ');
-
-        var C=code;
-        document.write(C+'     ');
-
-        var mtFirstName="Ali";  // camelCase
-        var firstName='Ali';
-        var n1=5,n2=20;
-        var number;
-        //------------------------
-        let id=100;
-        let lastName="Javadi";
-        //------------------------
-        const p=3.14;
-        const ip='192.10.32.64';
-        // ip='192.168.15.15';  // نمایش خطا در زمان اجرا
-        //------------------------
-
-        alert ('Hello');
-        alert (code);
-        document.write(n1);  // DOM
-
-
-    </script>
+    <title>DOM: Document Object Model</title>
+    <style>
+        .box{
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+            float: right;
+            background-color:darkorange;
+        }
+    </style>
 </head>
+<body dir="rtl">
+    <h1> DOM: Document Object Model</h1>
+    <h2> Test</h2>
+    <h2> Test</h2>
 
-<body>
-    
+<div class="box"> </div>
+<div class="box"> </div>
+<div class="box"> </div>
+<div class="box"> </div>
+
+<button id="save">ذخیره اطلاعات</button>
+
+<script>
+        document.getElementById("save").style.backgroundColor="blue";
+        document.getElementsByTagName("div")[1].style.backgroundColor="green";
+        document.getElementsByClassName("box")[3].style.backgroundColor="red";
+        document.querySelector("#save").style.border=" 5px red solid";
+        document.querySelector("h1").style.backgroundColor="#5615";
+        document.querySelector("h1").style.border="10px rgb(86, 100, 0) solid";
+
+        document.querySelector("h2").style.backgroundColor="#463";
+
+</script>
+
+
 </body>
 </html>
