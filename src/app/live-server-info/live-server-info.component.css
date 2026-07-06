@@ -1,0 +1,58 @@
+div {
+  width: 300px;
+  height: 350px;
+  border: 2px rgb(95, 36, 242) solid;
+  background-color: aliceblue;
+  margin: 20px;
+  padding: 10px;
+  float: left;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20pt;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(236, 0, 0);
+}
+
+p {
+  direction: rtl;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: blue;
+  font-size: 16pt;
+}
+
+/* استایل پایه لینک */
+a {
+  text-decoration: none; /* خط زیر رو حذف می‌کنه */
+  display: inline-block;
+  position: relative;
+  color: #333; /* هر رنگی که دوست داری */
+  font-family: Arial, sans-serif;
+  transition: color 0.3s ease;
+}
+
+/* خطی که از وسط ظاهر میشه */
+a::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%; /* از وسط شروع می‌کنه */
+  width: 0;
+  height: 2px; /* ضخامت خط */
+  background-color: #fa1d00; /* رنگ خط (هر رنگی دوست داری) */
+  transition: all 0.3s ease;
+  transform: translateX(-50%); /* برای وسط‌چین شدن دقیق */
+}
+
+/* وقتی موس می‌ره روش */
+a:hover::after {
+  width: 100%; /* خط کامل می‌شه */
+  left: 0; /* از چپ به راست کشیده میشه */
+  transform: translateX(0);
+}
+
+/* اختیاری: تغییر رنگ متن هنگام هاور */
+a:hover {
+  color: #3c05e2af;
+}

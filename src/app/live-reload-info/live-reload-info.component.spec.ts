@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FooterComponent } from './footer.component';
+import { LiveReloadInfoComponent } from './live-reload-info.component';
 
-describe('FooterComponent', () => {
-  let component: FooterComponent;
-  let fixture: ComponentFixture<FooterComponent>;
+describe('LiveReloadInfoComponent', () => {
+  let component: LiveReloadInfoComponent;
+  let fixture: ComponentFixture<LiveReloadInfoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FooterComponent]
+      imports: [LiveReloadInfoComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FooterComponent);
+    fixture = TestBed.createComponent(LiveReloadInfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
