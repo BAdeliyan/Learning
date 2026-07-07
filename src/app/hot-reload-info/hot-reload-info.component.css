@@ -68,7 +68,6 @@ a:hover::after {
   transform: translateX(0);
 }
 
-/* اختیاری: تغییر رنگ متن هنگام هاور */
-a:hover {
-  color: #3c05e2af;
+h2:hover {
+  color: #00025baf;
 }
