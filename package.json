@@ -6,8 +6,40 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+
+
+
+
+  
+  "deploy:off": "cp dist/dopaNGect/browser/index.html dist/dopaNGect/browser/index.off.html && cp src/404.html dist/dopaNGect/browser/index.html && ng deploy --base-href=/dopaNGect/",
+  "deploy:on": "rm dist/dopaNGect/browser/index.off.html || true && ng build && ng deploy --base-href=/dopaNGect/"
+
+
+
+
+
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "private": true,
   "dependencies": {
     "@angular/common": "^19.2.0",
