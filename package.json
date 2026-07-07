@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy:off": "copy dist\\bahram\\browser\\index.html dist\\bahram\\browser\\index.off.html && copy src\\404.html dist\\bahram\\browser\\index.html && ng deploy --base-href=/bahram/",
-    "deploy:no-rebuild": "cmd /c \"cd dist\\bahram\\browser && git init && git remote add origin https://github.com/BAdeliyan/bahram.git && git add . && git commit -m \"deploy without rebuild\" && git push -f origin main:gh-pages\""
+    "deploy:on": "if exist dist\\bahram\\browser\\index.off.html del dist\\bahram\\browser\\index.off.html && ng build && ng deploy --base-href=/bahram/"
   },
   "private": true,
   "dependencies": {
