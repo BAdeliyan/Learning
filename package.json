@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy:off": "copy dist\\dopaNGect\\browser\\index.html dist\\dopaNGect\\browser\\index.off.html && copy src\\404.html dist\\dopaNGect\\browser\\index.html && ng deploy --base-href=/dopaNGect/",
-    "deploy:on": "if exist dist\\dopaNGect\\browser\\index.off.html del dist\\dopaNGect\\browser\\index.off.html && ng build && ng deploy --base-href=/dopaNGect/"
+    "deploy:off": "copy dist\\bahram\\browser\\index.html dist\\bahram\\browser\\index.off.html && copy src\\404.html dist\\bahram\\browser\\index.html && ng deploy --base-href=/bahram/",
+    "deploy:on": "if exist dist\\bahram\\browser\\index.off.html del dist\\bahram\\browser\\index.off.html && ng build && ng deploy --base-href=/bahram/"
   },
   "private": true,
   "dependencies": {
