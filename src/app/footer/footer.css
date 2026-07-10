@@ -1,0 +1,12 @@
+footer {
+  color: #4a4a4a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+  direction: rtl;
+  font-size: 14pt;
+  text-align: justify;
+  font-size: 16pt; /* یا 18pt (همون که داری) */
+  line-height: 1.8; /* برای خوانایی بهتر */
+  background-color: brown;
+  color: antiquewhite;
+}
