@@ -1,0 +1,27 @@
+h1 {
+  color: #1a1a1a;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 30px;
+  padding: 20px;
+  direction: rtl;
+  font-size: 28pt; /* یا 36px */
+  line-height: 1.4; /* فاصله بین خطوط */
+}
+
+p {
+  color: #4a4a4a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 30px;
+  padding: 20px;
+  direction: rtl;
+  font-size: 18pt;
+  text-align: justify;
+  font-size: 16pt; /* یا 18pt (همون که داری) */
+  line-height: 1.8; /* برای خوانایی بهتر */
+}
+ul {
+  direction: rtl;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 30px;
+}

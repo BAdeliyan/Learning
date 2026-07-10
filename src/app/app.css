@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+.main-menu {
+  background-color: brown;
+  direction: rtl;
+  margin: -10px;
+  padding: 0px;
+}
+.main-menu li {
+  display: inline;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-menu li a {
+  display: inline-block;
+  padding: 25px;
+  text-decoration: none;
+  color: white;
+}
+.main-menu li a:hover {
+  background-color: crimson;
+}
+.active-menu {
+  background-color: crimson;
+}
+/* ---------------------------- */
+hr {
+  border: none;
+  height: 4px;
+  background: linear-gradient(to right, #e74c3c, #c0392b, #e74c3c);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.5);
+  margin: 10px auto;
+  width: 80%;
+}
