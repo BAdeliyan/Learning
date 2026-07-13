@@ -4,6 +4,7 @@ import { Footer } from './footer/footer';
 
 @Component({
   selector: 'app-root',
+  standalone: true, // <-- حتماً این خط را داشته باشد
   imports: [RouterOutlet, RouterLink, RouterLinkActive, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css',
