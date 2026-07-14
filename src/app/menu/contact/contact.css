@@ -9,6 +9,11 @@ h1 {
   line-height: 1.4; /* فاصله بین خطوط */
 }
 
+h1::before {
+  content: '📞';
+  font-size: 100px;
+}
+
 p {
   color: #4a4a4a;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,6 +24,7 @@ p {
   text-align: justify;
   font-size: 16pt; /* یا 18pt (همون که داری) */
   line-height: 1.8; /* برای خوانایی بهتر */
+  text-indent: 20px;
 }
 ul {
   direction: rtl;

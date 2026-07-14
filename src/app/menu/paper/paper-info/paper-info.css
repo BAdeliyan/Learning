@@ -1,0 +1,46 @@
+.page-title {
+  font-size: 32px;
+  color: #0e2446;
+  text-align: center;
+  direction: rtl;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-title::before {
+  content: '📄';
+  font-size: 100px;
+}
+
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e293b;
+  background: #f1f5f9;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin: 30px;
+  border: solid cornflowerblue;
+}
+
+.btn-back:hover {
+  background: #e2e8f0;
+  transform: translateX(-5px);
+}
+
+.btn-back::before {
+  content: '←';
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.btn-back:hover::before {
+  transform: translateX(-5px);
+}

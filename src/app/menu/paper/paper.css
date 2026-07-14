@@ -1,0 +1,42 @@
+h1 {
+  color: #1a1a1a;
+  text-align: right;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 30px;
+  padding: 20px;
+  direction: rtl;
+  font-size: 28pt; /* یا 36px */
+  line-height: 1.4; /* فاصله بین خطوط */
+}
+
+h1::before {
+  content: '📄';
+  font-size: 100px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.paper-box {
+  flex-basis: 20%;
+  height: 300px;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 20px;
+  direction: rtl;
+  text-align: center;
+}
+.box-link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: brown;
+  color: beige;
+  border-radius: 5px;
+}
+
+.box-link:hover {
+  background-color: rgb(168, 124, 67);
+}
