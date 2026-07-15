@@ -35,6 +35,7 @@ h1::before {
   background-color: brown;
   color: beige;
   border-radius: 5px;
+  margin: 5px;
 }
 
 .box-link:hover {

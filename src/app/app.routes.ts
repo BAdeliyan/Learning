@@ -13,5 +13,7 @@ export const routes: Routes = [
   { path: 'contact', component: Contact },
   { path: 'SliderComponent', component: SliderComponent },
   { path: 'paper', component: Paper },
-  { path: 'paper/:id', component: PaperInfo },
+  // { path: 'paper/:id', component: PaperInfo },
+  { path: 'paper/:id/:title/:summary/:date', component: PaperInfo },
+  { path: 'paper/info', component: PaperInfo },
 ];

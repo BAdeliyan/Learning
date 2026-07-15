@@ -7,8 +7,14 @@
         <h3>{{ item.title }}</h3>
         <p>{{ item.summary }}</p>
         <small>{{ item.date }}</small>
-        <br><br><br><br><br><br><br><br>
-        <a class="box-link" [routerLink]="['/paper',item.id]">مشاهده</a>
+        <br><br><br><br><br><br>
+        <!-- <a class="box-link" [routerLink]="['/paper',item.id]">مشاهده</a> -->
+        <a class="box-link" [routerLink]="['/paper',item.id,item.title,item.summary,item.date]">مشاهده</a>
+        <!-- <a class="box-link" [routerLink]="['/paper', item.id]" [queryParams]="{title: item.title}">مشاهده</a> -->
+
+        <a class="box-link" [routerLink]="['/paper/info']"
+            [queryParams]="{id:item.id,title:item.title,summary:item.summary,date:item.date}">مشاهده
+            با QS</a>
 
     </div>
     }@empty {
