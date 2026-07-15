@@ -1,23 +1,102 @@
-h1 {
-  color: #1a1a1a;
-  text-align: right;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 30px;
-  padding: 20px;
+/* ======================================== */
+/* تنظیمات ریشه (پایه)                    */
+/* ======================================== */
+:host {
+  display: block;
   direction: rtl;
-  font-size: 28pt; /* یا 36px */
-  line-height: 1.4; /* فاصله بین خطوط */
 }
 
+/* ======================================== */
+/* استایل h1 (پویا با clamp)               */
+/* ======================================== */
+h1 {
+  color: #1a1a1a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: right;
+  direction: rtl;
+
+  /* فونت بین ۱.۴rem تا ۲.۸rem به‌صورت پویا تغییر می‌کند */
+  font-size: clamp(1.4rem, 5vw, 2.8rem) !important;
+
+  line-height: 1.4;
+  margin: 1.2rem 1.5rem;
+  padding: 0.8rem 1.2rem;
+  border-right: 0.25rem solid #1976d2;
+  padding-right: 1.2rem;
+}
+
+/* ======================================== */
+/* استایل پاراگراف (پویا با clamp)         */
+/* ======================================== */
 p {
   color: #4a4a4a;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 30px;
-  padding: 20px;
   direction: rtl;
-  font-size: 18pt;
   text-align: justify;
-  font-size: 16pt; /* یا 18pt (همون که داری) */
-  line-height: 1.8; /* برای خوانایی بهتر */
-  text-indent: 20px;
+
+  /* فونت بین ۰.۸۵rem تا ۱.۲rem به‌صورت پویا تغییر می‌کند */
+  font-size: clamp(0.85rem, 2.5vw, 1.2rem) !important;
+
+  line-height: 1.8;
+  text-indent: clamp(0.6rem, 2vw, 1.2rem);
+  margin: 0.8rem 1.5rem;
+  padding: 0.8rem 1.2rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.04);
+}
+
+/* ======================================== */
+/* تنظیمات اضافی برای موبایل (آورراید)    */
+/* ======================================== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: clamp(1.2rem, 4vw, 1.8rem) !important;
+    text-align: center;
+    border-right: none;
+    border-bottom: 0.2rem solid #1976d2;
+    padding-bottom: 0.5rem;
+    margin: 0.8rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  p {
+    font-size: clamp(0.8rem, 2.8vw, 1rem) !important;
+    margin: 0.6rem 0.8rem;
+    padding: 0.6rem 0.8rem;
+    text-indent: 0.5rem;
+    line-height: 1.7;
+  }
+}
+
+/* ======================================== */
+/* موبایل خیلی کوچک (زیر ۴۸۰px)            */
+/* ======================================== */
+@media (max-width: 480px) {
+  h1 {
+    font-size: clamp(1rem, 3.5vw, 1.4rem) !important;
+    margin: 0.5rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  p {
+    font-size: clamp(0.7rem, 2.2vw, 0.9rem) !important;
+    margin: 0.4rem 0.5rem;
+    padding: 0.4rem 0.6rem;
+    line-height: 1.6;
+    text-indent: 0.3rem;
+  }
+}
+
+/* ======================================== */
+/* تبلت (۷۶۹px تا ۱۰۲۴px)                  */
+/* ======================================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: clamp(1.8rem, 4vw, 2.4rem) !important;
+  }
+
+  p {
+    font-size: clamp(1rem, 2.2vw, 1.15rem) !important;
+  }
 }

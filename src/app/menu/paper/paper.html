@@ -1,23 +1,20 @@
 <h1>مقاله‌ها</h1>
 
-
 <div class="flex-container">
     @for (item of papers; track item.id) {
     <div class="paper-box">
         <h3>{{ item.title }}</h3>
         <p>{{ item.summary }}</p>
         <small>{{ item.date }}</small>
-        <br><br><br><br><br><br>
-        <!-- <a class="box-link" [routerLink]="['/paper',item.id]">مشاهده</a> -->
-        <a class="box-link" [routerLink]="['/paper',item.id,item.title,item.summary,item.date]">مشاهده</a>
-        <!-- <a class="box-link" [routerLink]="['/paper', item.id]" [queryParams]="{title: item.title}">مشاهده</a> -->
-
-        <a class="box-link" [routerLink]="['/paper/info']"
-            [queryParams]="{id:item.id,title:item.title,summary:item.summary,date:item.date}">مشاهده
-            با QS</a>
-
+        <div class="button-group">
+            <a class="box-link" [routerLink]="['/paper', item.id, item.title, item.summary, item.date]">مشاهده</a>
+            <a class="box-link" [routerLink]="['/paper/info']"
+                [queryParams]="{id: item.id, title: item.title, summary: item.summary, date: item.date}">
+                مشاهده با QS
+            </a>
+        </div>
     </div>
-    }@empty {
-    <p>هیچ مقاله‌ای برای نمایش وجود ندارد.</p>}
+    } @empty {
+    <p>هیچ مقاله‌ای برای نمایش وجود ندارد.</p>
+    }
 </div>
-<br>

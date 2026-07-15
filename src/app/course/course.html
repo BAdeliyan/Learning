@@ -1,0 +1,33 @@
+<!-- <h1>دوره‌های آموزش انگولار</h1>
+<div>
+    <a routerLink="FullCourse" routerLinkActive="itemActive">آموزش جامع</a>
+    <a routerLink="HandsOnTraining" routerLinkActive="itemActive">آموزش کاربردی</a>
+    <a routerLink="ProjectOriented" routerLinkActive="itemActive">آموزش پروژه محور</a>
+</div>
+<router-outlet></router-outlet> -->
+
+
+
+<div class="course-page">
+
+    <h1 class="page-title">دوره‌های آموزش انگولار</h1>
+
+    <!-- دکمه‌های ناوبری -->
+    <div class="nav-links">
+        <a class="nav-link" routerLink="FullCourse" routerLinkActive="active-link">
+            آموزش جامع
+        </a>
+
+        <a class="nav-link" routerLink="HandsOnTraining" routerLinkActive="active-link">
+            آموزش کاربردی
+        </a>
+
+        <a class="nav-link" routerLink="ProjectOriented" routerLinkActive="active-link">
+            آموزش پروژه‌محور
+        </a>
+    </div>
+
+    <!-- بخش نمایش محتوای هر دوره -->
+    <router-outlet></router-outlet>
+
+</div>

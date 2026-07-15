@@ -1,43 +1,227 @@
+/* ======================================== */
+/* تنظیمات پایه (Desktop First)            */
+/* ======================================== */
+:host {
+  display: block;
+  direction: rtl;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 h1 {
   color: #1a1a1a;
   text-align: right;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 30px;
-  padding: 20px;
-  direction: rtl;
-  font-size: 28pt; /* یا 36px */
-  line-height: 1.4; /* فاصله بین خطوط */
+  font-size: clamp(1.6rem, 5vw, 2.8rem);
+  margin: 1.2rem 1.5rem;
+  padding: 0.8rem 1.2rem;
+  border-right: 0.25rem solid #1976d2;
+  padding-right: 1.2rem;
+  line-height: 1.4;
 }
 
 h1::before {
   content: '📄';
-  font-size: 100px;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  display: inline-block;
+  margin-left: 0.5rem;
 }
+
+/* ======================================== */
+/* کانتینر اصلی (Flexbox)                 */
+/* ======================================== */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+  margin-top: 1rem;
 }
+
+/* ======================================== */
+/* کارت مقاله                              */
+/* ======================================== */
 .paper-box {
-  flex-basis: 20%;
-  height: 300px;
-  border: 2px solid red;
-  border-radius: 10px;
-  margin: 15px;
-  padding: 20px;
-  direction: rtl;
-  text-align: center;
+  flex: 1 1 280px;
+  max-width: 320px;
+  min-height: 280px;
+  border: 2px solid #e74c3c;
+  border-radius: 0.75rem;
+  padding: 1.2rem 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
+
+.paper-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.paper-box h3 {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  margin: 0 0 0.4rem 0;
+  color: #2c3e50;
+}
+
+.paper-box p {
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  margin: 0.2rem 0 0.6rem 0;
+  color: #555;
+  flex-grow: 1;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.paper-box small {
+  display: block;
+  font-size: clamp(0.7rem, 1.2vw, 0.85rem);
+  color: #888;
+  margin-bottom: 0.8rem;
+}
+
+/* ======================================== */
+/* دکمه‌ها (گروه)                         */
+/* ======================================== */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
 .box-link {
   display: inline-block;
   text-decoration: none;
-  padding: 10px 15px;
-  background-color: brown;
-  color: beige;
-  border-radius: 5px;
-  margin: 5px;
+  padding: 0.4rem 0.8rem;
+  background-color: #8b4513;
+  color: #f5f5dc;
+  border-radius: 0.3rem;
+  font-size: clamp(0.7rem, 1.2vw, 0.85rem);
+  font-weight: 500;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+  white-space: nowrap;
 }
 
 .box-link:hover {
-  background-color: rgb(168, 124, 67);
+  background-color: #a0522d;
+  transform: scale(1.03);
+}
+
+/* ======================================== */
+/* تبلت (768px تا 1024px)                  */
+/* ======================================== */
+@media (max-width: 1024px) {
+  .paper-box {
+    flex: 1 1 240px;
+    max-width: 280px;
+  }
+
+  .box-link {
+    font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+/* ======================================== */
+/* موبایل (768px به پایین)                 */
+/* ======================================== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: clamp(1.3rem, 4.5vw, 1.8rem);
+    text-align: center;
+    border-right: none;
+    border-bottom: 0.2rem solid #1976d2;
+    padding-bottom: 0.5rem;
+    margin: 0.8rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  h1::before {
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+
+  .flex-container {
+    gap: 1rem;
+    padding: 0 0.8rem;
+  }
+
+  .paper-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-height: auto;
+    padding: 1rem 0.8rem;
+  }
+
+  .paper-box h3 {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+  }
+
+  .paper-box p {
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+  }
+
+  .paper-box small {
+    font-size: clamp(0.7rem, 2vw, 0.8rem);
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.4rem;
+  }
+
+  .box-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: clamp(0.8rem, 2.2vw, 1rem);
+    white-space: normal;
+  }
+}
+
+/* ======================================== */
+/* موبایل خیلی کوچک (زیر 480px)            */
+/* ======================================== */
+@media (max-width: 480px) {
+  h1 {
+    font-size: clamp(1rem, 4vw, 1.4rem);
+    margin: 0.5rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  h1::before {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+  }
+
+  .flex-container {
+    gap: 0.6rem;
+    padding: 0 0.4rem;
+  }
+
+  .paper-box {
+    padding: 0.6rem 0.5rem;
+    border-width: 1.5px;
+  }
+
+  .paper-box h3 {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+  }
+
+  .paper-box p {
+    font-size: clamp(0.75rem, 2.5vw, 0.85rem);
+  }
+
+  .box-link {
+    font-size: clamp(0.7rem, 2vw, 0.8rem);
+    padding: 0.4rem 0;
+  }
 }

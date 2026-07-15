@@ -1,12 +1,98 @@
-footer {
-  color: #4a4a4a;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px;
+/* ======================================== */
+/* تنظیمات ریشه (پایه)                    */
+/* ======================================== */
+:host {
+  display: block;
   direction: rtl;
-  font-size: 14pt;
-  text-align: justify;
-  font-size: 16pt; /* یا 18pt (همون که داری) */
-  line-height: 1.8; /* برای خوانایی بهتر */
-  background-color: brown;
-  color: antiquewhite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ======================================== */
+/* استایل فوتر                             */
+/* ======================================== */
+.site-footer {
+  background-color: #8b4513; /* قهوه‌ای */
+  color: #fdf5e6; /* کرم/قدیمی */
+  padding: clamp(1.5rem, 4vw, 3rem);
+  margin-top: 2rem;
+  border-top: 0.25rem solid #a0522d;
+  direction: rtl;
+  text-align: center;
+  font-family: inherit;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(0.8rem, 2vw, 1.5rem);
+}
+
+.footer-text {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-copy {
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+  opacity: 0.9;
+}
+
+.footer-copy strong {
+  color: #ffd700; /* طلایی برای برجسته‌سازی */
+  font-weight: 700;
+}
+
+/* ======================================== */
+/* موبایل (۷۶۸px به پایین)                 */
+/* ======================================== */
+@media (max-width: 768px) {
+  .site-footer {
+    padding: clamp(1rem, 3vw, 1.5rem);
+    margin-top: 1.5rem;
+  }
+
+  .footer-text {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    line-height: 1.5;
+  }
+
+  .footer-copy {
+    font-size: clamp(0.75rem, 2.5vw, 0.95rem);
+    line-height: 1.5;
+  }
+
+  .footer-content {
+    gap: 0.6rem;
+  }
+}
+
+/* ======================================== */
+/* موبایل خیلی کوچک (زیر ۴۸۰px)            */
+/* ======================================== */
+@media (max-width: 480px) {
+  .site-footer {
+    padding: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .footer-text {
+    font-size: clamp(0.8rem, 2.8vw, 0.95rem);
+  }
+
+  .footer-copy {
+    font-size: clamp(0.7rem, 2.2vw, 0.85rem);
+  }
+
+  .footer-content {
+    gap: 0.4rem;
+  }
 }

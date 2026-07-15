@@ -1,0 +1,25 @@
+<div class="not-found-container">
+    <div class="not-found-content">
+        <div class="icon-wrapper">
+            <span class="big-icon">🔍</span>
+        </div>
+        <h1 class="error-code">۴۰۴</h1>
+        <h2 class="error-title">اوه! صفحه‌ای که دنبالش بودی پیدا نشد!</h2>
+        <p class="error-message">
+            به نظر می‌رسه آدرس رو اشتباه وارد کردی یا صفحه حذف شده.
+            <br>
+            نگران نباش، ما کمکت می‌کنیم به مسیر درست برگردی.
+        </p>
+        <div class="action-buttons">
+            <a class="btn btn-primary" [routerLink]="['/home']">
+                <span class="btn-icon">🏠</span> بازگشت به خانه
+            </a>
+            <a class="btn btn-secondary" [routerLink]="['/course']">
+                <span class="btn-icon">📚</span> مشاهده دوره‌ها
+            </a>
+        </div>
+        <div class="fun-fact">
+            <p>💡 راهنمایی: مطمئن شو آدرس رو درست تایپ کردی یا از منوی بالا استفاده کن.</p>
+        </div>
+    </div>
+</div>

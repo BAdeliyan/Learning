@@ -1,0 +1,341 @@
+.hands-on-training {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  direction: rtl;
+}
+
+/* هدر دوره */
+.course-header {
+  text-align: center;
+  padding: 2rem 0;
+  border-bottom: 3px solid #f57c00;
+  margin-bottom: 2.5rem;
+}
+
+.course-title {
+  font-size: 2.5rem;
+  color: #e65100;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.course-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.course-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.meta-item {
+  background: #fff3e0;
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  color: #e65100;
+  font-weight: 500;
+  border: 1px solid #ffe0b2;
+}
+
+/* بخش‌های عمومی */
+section {
+  margin-bottom: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #e65100;
+  border-right: 4px solid #ffc107;
+  padding-right: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1.2rem;
+}
+
+.intro-section strong {
+  color: #e65100;
+}
+
+.practical-badge {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.practical-badge span {
+  background: #e65100;
+  color: #fff;
+  padding: 0.4rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* سرفصل‌ها */
+.syllabus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.syllabus-item {
+  background: #fdfdfd;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-right: 4px solid #ffb74d;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.syllabus-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(230, 81, 0, 0.12);
+}
+
+.syllabus-item h3 {
+  color: #e65100;
+  margin-bottom: 0.8rem;
+  font-size: 1.15rem;
+}
+
+.syllabus-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.syllabus-item ul li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+  align-items: center;
+}
+
+.syllabus-item ul li::before {
+  content: '🔹';
+  color: #ffc107;
+  margin-left: 0.6rem;
+  font-size: 0.9rem;
+}
+
+/* چالش‌ها (با رنگ متفاوت) */
+.challenges-section {
+  background: #fafafa;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+}
+
+.challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.challenge-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: relative;
+  border: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.challenge-card:hover {
+  border-color: #f57c00;
+}
+
+.challenge-num {
+  background: #ffc107;
+  color: #333;
+  font-weight: 700;
+  padding: 0.1rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.challenge-card h3 {
+  color: #e65100;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.challenge-card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.challenge-tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.challenge-tags span {
+  background: #e3f2fd;
+  color: #1976d2;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+/* مزایا */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.benefit-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e9ecef;
+  transition: all 0.2s ease;
+}
+
+.benefit-card:hover {
+  border-color: #ffb74d;
+  transform: scale(1.02);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-card h3 {
+  color: #e65100;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* دعوت به اقدام */
+.cta-section {
+  background: linear-gradient(135deg, #e65100 0%, #bf360c 100%);
+  color: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  color: #fff;
+  border-right-color: #ffc107;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.1s ease;
+}
+
+.btn-primary {
+  background: #ffc107;
+  color: #e65100;
+}
+
+.btn-primary:hover {
+  background: #ffca28;
+  transform: scale(1.02);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+}
+
+/* واکنش‌گرایی (Responsive) */
+@media (max-width: 768px) {
+  .course-title {
+    font-size: 2rem;
+  }
+
+  .syllabus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .challenges-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .practical-badge {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-meta {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

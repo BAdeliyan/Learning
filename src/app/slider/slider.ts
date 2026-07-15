@@ -16,7 +16,10 @@ export class SliderComponent implements AfterViewInit, OnDestroy {
   ngAfterViewInit(): void {
     // فقط در مرورگر اجرا شود
     if (isPlatformBrowser(this.platformId)) {
-      this.initializeSlider();
+      // ✅ تاخیر ۱۰۰ میلی‌ثانیه برای اطمینان از رندر کامل DOM
+      setTimeout(() => {
+        this.initializeSlider();
+      }, 100);
     }
   }
 
