@@ -33,3 +33,92 @@ hr {
   margin: 10px auto;
   width: 80%;
 }
+
+/* --------------------------------- */
+/* ============================
+   استایل دیالوگ خوش‌آمدگویی
+   ============================ */
+
+/* دیالوگ با افکت شیشه‌ای (Glassmorphism) */
+.custom-welcome-popup {
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-radius: 30px !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25) !important;
+  padding: 30px 25px !important;
+  max-width: 480px !important;
+  transition: all 0.3s ease !important;
+}
+
+/* دکمه با گرادیان قرمز و افکت هاور */
+.custom-welcome-btn {
+  background: linear-gradient(135deg, #e74c3c, #c0392b) !important;
+  border: none !important;
+  border-radius: 50px !important;
+  padding: 14px 45px !important;
+  font-size: 17px !important;
+  font-weight: bold !important;
+  color: #fff !important;
+  letter-spacing: 0.5px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3) !important;
+}
+
+.custom-welcome-btn:hover {
+  transform: scale(1.07) !important;
+  box-shadow: 0 10px 30px rgba(231, 76, 60, 0.5) !important;
+  background: linear-gradient(135deg, #ff6b6b, #e74c3c) !important;
+}
+
+.custom-welcome-btn:active {
+  transform: scale(0.97) !important;
+}
+
+/* استایل تایمر پیشرفت (نوار بالای دیالوگ) */
+.swal2-timer-progress-bar {
+  background: linear-gradient(to right, #e74c3c, #f39c12) !important;
+  height: 4px !important;
+}
+
+/* استایل آیکون موفقیت */
+.swal2-success-circular-line-left,
+.swal2-success-circular-line-right,
+.swal2-success-fix {
+  background: transparent !important;
+}
+
+/* فاصله‌گذاری بهتر متن در دیالوگ */
+.swal2-html-container {
+  margin: 15px 0 !important;
+  padding: 0 !important;
+}
+
+/* ============================
+   استایل‌های اختیاری برای کل سایت
+   ============================ */
+
+/* اگر می‌خواهید خود سایت هم استایل داشته باشد */
+body {
+  font-family: 'Vazir', 'Tahoma', sans-serif;
+  background: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* یک افکت ورود ملایم برای کل صفحه */
+app-root {
+  animation: fadeInPage 0.8s ease;
+}
+
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
