@@ -1,11 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-body {
-  margin: 0px;
-}
-
 /* ==================== تعریف فونت‌ها ==================== */
-
-/* فونت YekanBakh - اصلی */
 @font-face {
   font-family: 'YekanBakh';
   src: url('/YekanBakh-Regular.ttf') format('truetype');
