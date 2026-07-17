@@ -7,7 +7,7 @@
   padding: 2rem 1.5rem;
   background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
   direction: rtl;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .not-found-content {

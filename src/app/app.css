@@ -9,7 +9,6 @@
 }
 .main-menu li {
   display: inline;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .main-menu li a {
   display: inline-block;
@@ -101,7 +100,6 @@ hr {
 
 /* اگر می‌خواهید خود سایت هم استایل داشته باشد */
 body {
-  font-family: 'Vazir', 'Tahoma', sans-serif;
   background: #f5f6fa;
   margin: 0;
   padding: 0;
