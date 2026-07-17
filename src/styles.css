@@ -1,49 +1,49 @@
 /* YekanBakh Fonts */
 @font-face {
   font-family: 'YekanBakh';
-  src: url('/YekanBakh-Hairline.ttf') format('truetype');
+  src: url('/YekanBakh-Hairline.woff2') format('truetype');
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'YekanBakh';
-  src: url('/YekanBakh-Light.ttf') format('truetype');
+  src: url('/YekanBakh-Light.woff2') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'YekanBakh';
-  src: url('/YekanBakh-Regular.ttf') format('truetype');
+  src: url('/YekanBakh-Regular.woff2') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'YekanBakh';
-  src: url('/YekanBakh-Medium.ttf') format('truetype');
+  src: url('/YekanBakh-Medium.woff2') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'YekanBakh';
-  src: url('/YekanBakh-Bold.ttf') format('truetype');
+  src: url('/YekanBakh-Bold.woff2') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'YekanBakh';
-  src: url('/YekanBakh-Fat.ttf') format('truetype');
+  src: url('/YekanBakh-Fat.woff2') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'YekanBakh';
-  src: url('/YekanBakh-Heavy.ttf') format('truetype');
+  src: url('/YekanBakh-Heavy.woff2') format('truetype');
   font-weight: 800; /* یا 900 بسته به سلیقه */
   font-style: normal;
 }
